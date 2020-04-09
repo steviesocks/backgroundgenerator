@@ -61,20 +61,6 @@ function randomize() {
 	changeBackground();
 }
 
-
-// function colorPicker() {
-// 	randomHex = '#'+Math.floor(Math.random()*16777216).toString(16);
-// }
-
-// function randomize() {
-// 	colorPicker();
-// 	console.log(randomHex);
-// 	color1.value = randomHex;
-// 	colorPicker();
-// 	color2.value = randomHex;
-// 	changeBackground();
-// }
-
 // copyCSS function copied from: https://alligator.io/js/copying-to-clipboard/
 
 function copyCSS() {
