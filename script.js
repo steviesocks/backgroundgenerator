@@ -52,17 +52,28 @@ function swapDirection() {
 // randomize function copied from: https://www.paulirish.com/2009/random-hex-color-code-snippets/
 
 function colorPicker() {
-	randomHex = '#'+Math.floor(Math.random()*16777216).toString(16);
+	return '#'+Math.floor(Math.random()*16777216).toString(16);
 }
 
 function randomize() {
-	colorPicker();
-	console.log(randomHex);
-	color1.value = randomHex;
-	colorPicker();
-	color2.value = randomHex;
+	color1.value = colorPicker();
+	color2.value = colorPicker();
 	changeBackground();
 }
+
+
+// function colorPicker() {
+// 	randomHex = '#'+Math.floor(Math.random()*16777216).toString(16);
+// }
+
+// function randomize() {
+// 	colorPicker();
+// 	console.log(randomHex);
+// 	color1.value = randomHex;
+// 	colorPicker();
+// 	color2.value = randomHex;
+// 	changeBackground();
+// }
 
 // copyCSS function copied from: https://alligator.io/js/copying-to-clipboard/
 
