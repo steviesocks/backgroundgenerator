@@ -18,6 +18,7 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     letter-spacing: 0.3em;
     text-transform: initial;
     color: white;
@@ -30,9 +31,43 @@ h3 {
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
+    display: inline-block;
+    cursor: pointer;
 
 }
-
+.center {
+    text-align: center;
+}
 input {
+    cursor: pointer;
+}
 
+h4 {
+ display: inline-block;
+/* position: relative;
+*/ transition: transform .5s ease;
+}
+
+h4#first.swap {
+    transform: translate(9.7rem, 0);
+}
+h4.last.swap {
+    transform: translate(-9rem, 0);
+}
+
+.direction {
+   cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    font-size: .8em;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    padding: .3rem .6rem;
+}
+.success {
+    color: white;
 }
