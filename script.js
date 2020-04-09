@@ -20,7 +20,7 @@ function changeBackground() {
 		+ color1.value 
 		+ ", " 
 		+ color2.value
-		+ ";";
+		+ ");";
 }
 
 
