@@ -78,8 +78,7 @@ h4.last.swap {
  /* STYLES GO HERE */
     h1 {
         font: 600 4em 'Raleway', sans-serif;
-        /*color: rgba(0,0,0,.5);*/
-	color: red;
+        color: rgba(0,0,0,.5);
         text-align: center;
         text-transform: uppercase;
         letter-spacing: .5em;
