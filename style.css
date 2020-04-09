@@ -72,9 +72,9 @@ h4.last.swap {
 }
 
 @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
  /* STYLES GO HERE */
     h1 {
         font: 600 4em 'Raleway', sans-serif;
