@@ -71,11 +71,11 @@ h4.last.swap {
     color: white;
 }
 
+/*iphone 11*/
 @media only screen 
     and (device-width: 414px) 
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) {
- /* STYLES GO HERE */
     h1 {
         font: 600 4em 'Raleway', sans-serif;
         color: rgba(0,0,0,.5);
@@ -116,3 +116,50 @@ h4.last.swap {
     }
 
 }    
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 450px)
+    and (min-device-height: 650px) 
+    and (max-device-height: 700px)
+    and (-webkit-device-pixel-ratio: 2) {
+    
+    h1 {
+        font: 600 4em 'Raleway', sans-serif;
+        color: rgba(0,0,0,.5);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: 70px;
+    }
+    input {
+        width: 20rem;
+        height: 10rem;
+        margin: 0 40px;
+    }
+    h2 {
+        font-size: 3em;
+        margin-top: 48px;
+    }
+    h4 {
+        font-size: 2.5em;
+        margin-top: 100px;
+    }
+    h4#first.swap {
+    transform: translate(17.2rem, 0);
+    }
+    h4.last.swap {
+        transform: translate(-15rem, 0);
+    }
+    h3 {
+        font-size: 2em;
+    }
+    .button {
+        font-size: 3em;
+        border-radius: 15px;
+        padding: .3rem 1.5rem;
+        margin-top: 50px;
+    }
+
+}
