@@ -10,12 +10,7 @@ var button = document.querySelector(".direction");
 var right = document.getElementById("first");
 var left = document.getElementById("last");
 var randomBtn = document.querySelector(".button");
-
-
-// function declarations
-
-function changeBackground() {
-	body.style.background = 
+var backgroundColor = 
 		"linear-gradient(to "
 		+ direction
 		+ ", " 
@@ -23,37 +18,49 @@ function changeBackground() {
 		+ ", " 
 		+ color2.value 
 		+ ")";
-	h3.textContent = 
-		"background: linear-gradient(to "
-		+direction
-		+ ", "
-		+ color1.value 
+var randomHex = "#ffffff";
+
+h3.textContent = "background: " + backgroundColor +";";
+
+// function declarations
+
+function changeBackground() {
+	var backgroundColor = 
+		"linear-gradient(to "
+		+ direction
 		+ ", " 
-		+ color2.value
-		+ ");";
+		+ color1.value  
+		+ ", " 
+		+ color2.value 
+		+ ")";
+	body.style.background = backgroundColor;
+	h3.textContent = "background: " + backgroundColor + ";";
 }
 
 function swapDirection() {
 	console.log("clicked");
 	if (direction === "right") {
 		direction = "left";
-		right.classList.toggle("swap");
-		left.classList.toggle("swap");
 	} else {
 		direction = "right";
-		right.classList.toggle("swap");
-		left.classList.toggle("swap");
 	}
+	right.classList.toggle("swap");
+	left.classList.toggle("swap");
 	changeBackground();
 }
 
 // randomize function copied from: https://www.paulirish.com/2009/random-hex-color-code-snippets/
 
+function colorPicker() {
+	randomHex = '#'+Math.floor(Math.random()*16777216).toString(16);
+}
+
 function randomize() {
-	color1.value = '#'+Math.floor(Math.random()*16777215).toString(16);
-	console.log(color1.value);
-		color2.value = '#'+Math.floor(Math.random()*16777215).toString(16);
-	console.log(color2.value);
+	colorPicker();
+	console.log(randomHex);
+	color1.value = randomHex;
+	colorPicker();
+	color2.value = randomHex;
 	changeBackground();
 }
 
